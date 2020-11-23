@@ -2,10 +2,12 @@ package guru.springframework.sfgpetclinic.model;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 class OwnerTest {
 
+	@Disabled (value = "testing diasbled")
 	@Test
 	void dependantAssertions() {
 		Owner owner = new Owner(1l, "Joe", "Buck");
