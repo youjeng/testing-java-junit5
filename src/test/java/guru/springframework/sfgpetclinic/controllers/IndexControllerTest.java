@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 import java.time.Duration;
+import static org.assertj.core.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -31,7 +32,9 @@ class IndexControllerTest {
 	@DisplayName("Test proper view name is returned for index page")
 	@Test
 	void index() {
-		assertEquals("index", controller.index(), "Wrong view returned yo");
+	 	assertEquals("index", controller.index(), "Wrong view returned yo");
+	 	
+	 	assertThat(controller.index()).isEqualTo("index");
 	}
 	
 	@Test
