@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class OwnerTest {
 
-	@Disabled (value = "testing diasbled")
+	@Disabled (value = "testing disabled")
 	@Test
 	void dependantAssertions() {
 		Owner owner = new Owner(1l, "Joe", "Buck");
